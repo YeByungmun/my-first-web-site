@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WEB1 - HTML</title>
+  </head>
+
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <ol>
+      <li><a href="htmlstudy.html">HTML-Study</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+
+    <h2>HTML 이란?</h2>
+    <p> <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="html5 speicification">HyperText Markup Language (HTML)</a> is a type of markup language.[1] It is used <strong>to make <u>webpages</u>.</strong> Webpages can include writing, links, pictures, and even sound and video. HTML tells web browsers what webpages should look like. HTML also adds meta information to webpages. Meta information is information about about a webpage e.g., the name of the person who created the page. Web browsers usually do not show meta information.</p>
+    <p style="margin-top:30px">
+    HTML is often used with Cascading Style Sheets (CSS) and JavaScript. CSS is used to change the way HTML looks. JavaScript tells websites how to behave. It can also change HTML and CSS.</p>
+    <img src="coding.jpg" width="100%">
+    <p>HTML is made by the World Wide Web Consortium (W3C). There are many versions of HTML. As of September 2018, the current standard of HTML is called HTML 5 and is specifically at version 5.2.</p>
+    <h3 style="background-color:skyblue;"> &lt;html&gt 태그에 관하여...</h3>
+    <ul>
+      <li> li태그 : list의 약자로 즉, 목록을 만들 때 사용하며, ul 태그와 함께 사용된다.</li>
+      <li> 태그이름 : 부등호 &lt 는 html 파일에 직접 사용불가. 따락서 &lt; 기호를, <strong>&amp;lt;</strong> 이렇게 표기하면 태그와 혼동되지 않고 부등호가 잘 표현됩니다.</li>
+      <li> &lt;h1&gt;태그 : 제목 태그로 한 페이지에 한 번만 사용한다.</li>
+      <li> &lt;h1&gt태그 색상 :  &lt;h3 style="background-color:orange;">미래인류의 시간 여행행 &lt/h3&gt</li>
+      <li>&amp;amp :
+앰퍼샌드(&amp;) 기호는, 위의 경우들에서 보는 것과 같이 이미 특수한 용도로 사용되고 있습니다. 그래서 &amp; 기호 자체를 표현해 주기 위해서는 &amp; 를, <strong>&amp;amp;</strong> 이렇게 표기해 주어야 합니다.</li>
+      <li> > 태그 : &amp;gt</li>
+    </ul>
+
+
+    <p>먼저 글씨에 영향을 주는 HTML 태그에 대해서 알아보자.</p>
+<p>&nbsp;</p>
+<table class="txc-table" style="font-size: 13px; font-family: '맑은 고딕', sans-serif; width: 445px; border-collapse: collapse;" border="0" width="445" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="height: 24px; width: 33px; border: #ccc 1px solid;">&nbsp;번호</td>
+<td style="height: 24px; width: 197px; border: #cccccc 1px solid;">
+<p style="text-align: center;">명령어&nbsp;</p>
+</td>
+<td style="border-top: #cccccc 1px solid; height: 24px; border-right: #cccccc 1px solid; width: 214px; border-bottom: #cccccc 1px solid;">
+<p style="text-align: center;">내용&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="height: 24px; border-right: #ccc 1px solid; width: 33px; border-bottom: #ccc 1px solid; border-left: #ccc 1px solid;">
+<p style="text-align: center;">&nbsp;1</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 197px; border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid;">
+<p style="margin-left: 2em;">&amp;nbsp;</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 214px; border-bottom: #cccccc 1px solid;">
+<p style="margin-left: 2em;">공백&nbsp;[SPACE 효과]</p>
+</td>
+</tr>
+<tr>
+<td style="height: 24px; border-right: #ccc 1px solid; width: 33px; border-bottom: #ccc 1px solid; border-left: #ccc 1px solid;">
+<p style="text-align: center;">&nbsp;2</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 197px; border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid;">
+<p style="margin-left: 2em;">&amp;lt;</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 214px; border-bottom: #cccccc 1px solid;">
+<p style="margin-left: 2em;">&lt;&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="height: 24px; border-right: #ccc 1px solid; width: 33px; border-bottom: #ccc 1px solid; border-left: #ccc 1px solid;">
+<p style="text-align: center;">&nbsp;3</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 197px; border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid;">
+<p style="margin-left: 2em;">&amp;gt;&nbsp;</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 214px; border-bottom: #cccccc 1px solid;">
+<p style="margin-left: 2em;">&gt;&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="height: 24px; border-right: #ccc 1px solid; width: 33px; border-bottom: #ccc 1px solid; border-left: #ccc 1px solid;">
+<p style="text-align: center;">&nbsp;4</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 197px; border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid;">
+<p style="margin-left: 2em;">&lt;CENTER&gt;&lt;/CENTER&gt;&nbsp;</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 214px; border-bottom: #cccccc 1px solid;">
+<p style="margin-left: 2em;">가운데정렬</p>
+</td>
+</tr>
+<tr>
+<td style="height: 24px; border-right: #ccc 1px solid; width: 33px; border-bottom: #ccc 1px solid; border-left: #ccc 1px solid;">
+<p style="text-align: center;">&nbsp;5</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 197px; border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid;">
+<p style="margin-left: 2em;">&lt;HR/&gt;</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 214px; border-bottom: #cccccc 1px solid;">
+<p style="margin-left: 2em;">선긋기</p>
+</td>
+</tr>
+<tr>
+<td style="height: 24px; border-right: #ccc 1px solid; width: 33px; border-bottom: #ccc 1px solid; border-left: #ccc 1px solid;">
+<p style="text-align: center;">&nbsp;6</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 197px; border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid;">
+<p style="margin-left: 2em;">&lt;I&gt;&lt;/I&gt;</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 214px; border-bottom: #cccccc 1px solid;">
+<p style="margin-left: 2em;">이태리체&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="height: 24px; border-right: #ccc 1px solid; width: 33px; border-bottom: #ccc 1px solid; border-left: #ccc 1px solid;">
+<p style="text-align: center;">&nbsp;7</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 197px; border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid;">
+<p style="margin-left: 2em;">&lt;B&gt;&lt;/B&gt;</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 214px; border-bottom: #cccccc 1px solid;">
+<p style="margin-left: 2em;">강조&nbsp;[글씨 굵게]</p>
+</td>
+</tr>
+<tr>
+<td style="height: 24px; border-right: #ccc 1px solid; width: 33px; border-bottom: #ccc 1px solid; border-left: #ccc 1px solid;">
+<p style="text-align: center;">&nbsp;8</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 197px; border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid;">
+<p style="margin-left: 2em;">&lt;U&gt;&lt;/U&gt;&nbsp;</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 214px; border-bottom: #cccccc 1px solid;">
+<p style="margin-left: 2em;">밑줄 [글씨 아래 밑줄]&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="height: 24px; border-right: #ccc 1px solid; width: 33px; border-bottom: #ccc 1px solid; border-left: #ccc 1px solid;">
+<p style="text-align: center;">&nbsp;9</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 197px; border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid;">
+<p style="margin-left: 2em;">&lt;BR/&gt;</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 214px; border-bottom: #cccccc 1px solid;">
+<p style="margin-left: 2em;">줄바꾸기[ENTER 효과]&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="height: 24px; border-right: #ccc 1px solid; width: 33px; border-bottom: #ccc 1px solid; border-left: #ccc 1px solid;">
+<p style="text-align: center;">&nbsp;10</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 197px; border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid;">
+<p style="margin-left: 2em;">&lt;H1&gt;&lt;/H1&gt;&nbsp; &lt;H2~H6&gt;&nbsp;</p>
+</td>
+<td style="height: 24px; border-right: #cccccc 1px solid; width: 214px; border-bottom: #cccccc 1px solid;">
+<p style="margin-left: 2em;">글자크기[H1 큰글씨]&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><b>1. &amp;nbsp;</b></p>
+<p style="margin-left: 2em;">[<span style="color: #0900ff;"><b><span style="color: #ff0000;">H&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: #ff0000;">O&nbsp; </span><span style="color: #ff0000;">N&nbsp; </span><span style="color: #ff0000;">G</span></b></span>]</p>
+<p style="margin-left: 2em;">- HTML에서 위와같이 글씨 사이에 공백을 여러번 입력해도 1개로 인식한다.</p>
+<p style="margin-left: 2em;">[<span style="color: #0900ff;"><b><span style="color: #ff0000;">H O N G</span></b></span>]</p>
+<p style="margin-left: 2em;">- 그래서 공백을 여러개 넣고 싶을때는 &amp;nbsp;를 여러번 입력한다.</p>
+<p style="margin-left: 2em;">[<span style="color: #ff0000;"><b>H</b></span>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span style="color: #0900ff;"><b><span style="color: #ff0000;">O</span></b></span>&amp;nbsp;&amp;nbsp;<span style="color: #ffc19e;"><b><span style="color: #ff0000;">N</span></b></span>&amp;nbsp;&amp;nbsp;<span style="color: #ff0000;"><b>G</b></span>]</p>
+<p>&nbsp;</p>
+<p><b>2. &amp;lt; </b></p>
+<p style="margin-left: 2em;">[<span style="color: #ff0000;"><b>&lt;</b></span> HONG <b><span style="color: #ff0000;">&gt;</span></b>]</p>
+<p style="margin-left: 2em;">- HTML에서 위와같이 입력하면 태그[명령어]로 인식한다.</p>
+<p style="margin-left: 2em;">[ <b><span style="color: #ff0000;">&amp;lt;</span></b> HONG <span style="color: #ff0000;"><b>&amp;gt;</b></span>]</p>
+<p style="margin-left: 2em;">- 그래서 &lt;를 넣고 싶을때는 위와같이 &amp;lt;를 입력한다.</p>
+<p>&nbsp;</p>
+<p><b>3. &amp;gt;</b></p>
+<p style="margin-left: 2em;">[<span style="color: #ff0000;"><b>&lt;</b></span> HONG<b> <span style="color: #ff0000;">&gt;</span></b>]</p>
+<p style="margin-left: 2em;">- HTML에서 위와같이 입력하면 태그[명령어]로 인식한다.</p>
+<p style="margin-left: 2em;">[ <b><span style="color: #ff0000;">&amp;lt;</span></b> HONG <span style="color: #ff0000;"><b>&amp;gt;</b></span>]</p>
+<p style="margin-left: 2em;">- 그래서 &gt;를 넣고 싶을때는 위와같이 &amp;gt;를 입력한다.</p>
+<p>&nbsp;</p>
+<p><b>4. &lt;CENTER&gt;&lt;/CENTER&gt;</b></p>
+<p style="margin-left: 2em;">[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HONG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; ]</p>
+<p style="margin-left: 2em;">- HTML에서 위와같이 가운데 정렬을 하고 싶을 때 &lt;CENTER&gt;를 사용한다.</p>
+<p style="margin-left: 2em;"><span style="color: #ff0000;"><span>[</span><b>&lt;CENTER&gt;</b></span>HONG<span style="color: #ff0000;"><b>&lt;/CENTER&gt;</b></span>]</p>
+<p style="margin-left: 2em;">&nbsp;</p>
+<p><b>5. &lt;HR/&gt;</b></p>
+<p style="margin-left: 2em;">[ --------------------------------------------------]</p>
+<p style="margin-left: 2em;">- HTML에서 구분선을 긋고 싶을때 사용한다.</p>
+<p style="margin-left: 2em;">[<span style="color: #ff0000;"><b>&lt;HR/&gt;</b></span>]</p>
+<p>&nbsp;</p>
+<p><b>6. &lt;I&gt;&lt;/I&gt;</b></p>
+<p style="margin-left: 2em;">[<i>HONG</i>]</p>
+<p style="margin-left: 2em;">- HTML에서 이태리체 글씨로 표현하고 싶을때 사용한다.</p>
+<p style="margin-left: 2em;">[<b><span style="color: #ff0000;">&lt;I&gt;</span></b>HONG<span style="color: #ff0000;"><b>&lt;/I&gt;</b></span>]</p>
+<p style="margin-left: 2em;">&nbsp;</p>
+<p><b>7. &lt;B&gt;&lt;/B&gt;</b></p>
+<p style="margin-left: 2em;">[<b>HONG</b>]</p>
+<p style="margin-left: 2em;">- HTML에서 글씨를 두껍게 표현하고 싶을때 사용한다.</p>
+<p style="margin-left: 2em;">[<b><span style="color: #ff0000;">&lt;B&gt;</span></b>HONG<span style="color: #ff0000;"><b>&lt;/B&gt;</b></span>]</p>
+<p style="margin-left: 2em;">&nbsp;</p>
+<p><b>8. &lt;U&gt;&lt;/U&gt;</b></p>
+<p style="margin-left: 2em;">[<u>HONG</u>]</p>
+<p style="margin-left: 2em;">- HTML에서 글씨에 밑줄을 긋고 싶을때 사용한다.</p>
+<p style="margin-left: 2em;">[<b><span style="color: #ff0000;">&lt;U&gt;</span></b>HONG<span style="color: #ff0000;"><b>&lt;/U&gt;</b></span>]</p>
+<p style="margin-left: 2em;">&nbsp;</p>
+<p><b>9. &lt;BR/&gt;</b></p>
+<p style="margin-left: 2em;">[HO]</p>
+<p style="margin-left: 2em;">[NG]</p>
+<p style="margin-left: 2em;">- HTML에서&nbsp;글씨를 아래로 내리고 싶을때&nbsp;사용한다. [ ENTER키 효과 ]</p>
+<p style="margin-left: 2em;">[HO<span style="color: #ff0000;"><b>&lt;BR/&gt;</b></span>NG]</p>
+<p style="margin-left: 2em;">&nbsp;</p>
+<p><b>10. &lt;H1&gt;&lt;/H1&gt;&nbsp;&nbsp;&nbsp;&nbsp; &lt;H2~H6&gt;</b></p>
+<p style="margin-left: 2em;"><span style="font-size: 24pt;">[HONG_H1]</span></p>
+<p style="margin-left: 2em;"><span style="font-size: 18pt;">[HONG_H2</span><span style="font-size: 18pt;">]</span></p>
+<p style="margin-left: 2em;"><span style="font-size: 14pt;">[HONG_H3]</span></p>
+<p style="margin-left: 2em;"><span style="font-size: 12pt;">[HONG_H4]</span></p>
+<p style="margin-left: 2em;"><span style="font-size: 10pt;">[HONG_H5]</span></p>
+<p style="margin-left: 2em;"><span style="font-size: 8pt;">[HONG_H6</span><span style="font-size: 8pt;">]</span></p>
+<p style="margin-left: 2em;">- HTML에서 &lt;H1 ~ H6&gt; 태그를 사용하여 글씨 크기 조절을 할수 있다.</p>
+<p style="margin-left: 2em;">- 숫자가 커질수록 글씨 크기는 작아진다.</p>
+<p style="margin-left: 2em;"><span style="color: #ff0000;"><span>[</span><b>&lt;H1&gt;</b></span>HONG_H1<span style="color: #ff0000;"><b>&lt;/H1&gt;</b><span>]</span></span></p>
+<p style="margin-left: 2em;"><span style="color: #ff0000;"><span style="color: #ff0000;"><span>[</span><b>&lt;H2&gt;</b></span><span style="color: #000000;">HONG_H2</span><span style="color: #ff0000;"><b>&lt;/H2&gt;</b><span>]</span></span></span></p>
+<p style="margin-left: 2em;"><span style="color: #ff0000;"><span style="color: #ff0000;"><span style="color: #ff0000;"><span>[</span><b>&lt;H3&gt;</b></span><span style="color: #000000;">HONG_H3</span><span style="color: #ff0000;"><b>&lt;/H3&gt;</b><span>]</span></span></span></span></p>
+<p style="margin-left: 2em;"><span style="color: #ff0000;"><span>[</span><b>&lt;H4&gt;</b></span>HONG_H4<span style="color: #ff0000;"><b>&lt;/H4&gt;</b><span>]</span></span></p>
+<p style="margin-left: 2em;"><span style="color: #ff0000;"><span style="color: #ff0000;"><span>[</span><b>&lt;H5&gt;</b></span><span style="color: #000000;">HONG_H5</span><span style="color: #ff0000;"><b>&lt;/H5&gt;</b><span>]</span></span></span></p>
+<p style="margin-left: 2em;"><span style="color: #ff0000;"><span style="color: #ff0000;"><span style="color: #ff0000;"><span>[</span><b>&lt;H6&gt;</b></span><span style="color: #333333;">HONG_H6</span><span style="color: #ff0000;"><b>&lt;/H6&gt;</b><span>]</span></span></span></span></p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>
