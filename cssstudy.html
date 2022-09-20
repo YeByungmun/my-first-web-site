@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WEB1 - CSS</title>
+    <link rel="stylesheet" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+  </head>
+
+  <body>
+    <h1><a href="index.html">HOME</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="htmlstudy.html">HTML</a></li>
+        <li><a href="cssstudy.html">CSS</a></li>
+        <li><a href="jsstudy.html">JavaScript</a></li>
+        <input type="button" value="night" onclick="
+           nightDayHandler(this);
+            ">
+
+      </ol>
+      <div id="article">
+        <h2>CSS</h2>
+        <p>
+          Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+        </p>
+      </div>
+    </div>
+
+      <ul>
+        <li> <a href="https://youtu.be/nC2-nJEXL2U">WEB2 CSS 5 - 혁명적 변화(생활코딩)</a></li>
+        <li>CSS의 등장(생활코딩 youtube 동영상 설명)</a></li>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L41Zjl7XANI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </ul>
+
+    <h2>* css를 사용하는 이유 : 글씨색 표현 방법 : &lt;style&gt; 태그로 삽입</h2>
+    <p>과거에는 font 태그로 글씨색을 표현 하였으나 현재는 <code class="inlinecode">&lt;style&gt;</code> 태그를 <a href="https://dasima.xyz/html-heads/"><code class="inlinecode">&lt;head&gt;</code></a> 사이에 직접 삽입해서 CSS 선택자를 적용하는 것이다. 디자인(글씨색 CSS)과 정보(HTML 태그)가 분리되어 편집자와 컴퓨터 모두 편리하게 되었다. 한 두개 정도야 직접 타이핑 하면 되지만 동일 코드가 1억개 있다고 치면
+    색 변경을 위하여 1억개를 모두 타이핑하는 것은 거의 불가능에 가깝다. css를 활용하면 color 단어 하나면 수정하면
+    가능하다.  </p>
+
+    <p>아래 예시 처럼 <code class="inlinecode">&lt;font&gt;</code> 태그에 <code class="inlinecode">color</code> 속성을 사용해도 작동은 합니다. 하지만 작동이 되는 이유는 과거의 수 많은 웹문서를 보존하기 위함이지 웹표준은 아닙니다. 맨 아래 처럼 태그에 <code class="inlinecode">style</code> 속성과 속성값을 따로 삽입하는 것이 웹표준입니다.</p>
+
+<pre><code>&lt;h2&gt;수메르 어원&lt;/h2&gt;
+&lt;font color="red"&gt;&lt;p&gt;아카드인의 방언 : 아카드인이 메소포타미아 남부 지방 사람들을 아카드어로 부르던 말&lt;/p&gt;&lt;/font&gt;
+&lt;p style="color:blue;"&gt;웅 상 기가 : 수메르인들이 수메르어로 자신들을 부르던 말, 검은 머리 사람들이라는 의미&lt;/p&gt;</code></pre>
+
+    <h2>수메르어 어원</h2>
+      <ul>
+        <li>시날(Shinar) : 성경에서 수메르를 지칭하는 방언</li>
+        <li>신그르(Sngr) : 이집트 문명에서 수메르를 지칭하는 방언</li>
+        <li>산하르(Sanhar) : 히타이트에서 수메르를 지칭하는 방언</li>
+      </ul>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      ul {
+        color: red;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h2&gt;수메르어 어원&lt;/h2&gt;
+      &lt;ul&gt;
+        &lt;li&gt;시날(Shinar) : 성경에서 수메르를 지칭하는 방언&lt;/li&gt;
+        &lt;li&gt;신그르(Sngr) : 이집트 문명에서 수메르를 지칭하는 방언&lt;/li&gt;
+        &lt;li&gt;산하르(Sanhar) : 히타이트에서 수메르를 지칭하는 방언&lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+  <p>출처 : https://dasima.xyz/font-color-tag/</p>
+
+  <ul>
+    <li>style 태그에서 선택자의 우선 순위 : id > class > 태그선택자 </li>
+    <li>이유 : id 는 말 그대로 중복 불가. 한 번만 사용 가능이니 제일 우선 </li>
+    <li>동일 선택자 중에서는 선택자에게서 가까운 것이 우선한다.</li>
+  </ul>
+
+</html>

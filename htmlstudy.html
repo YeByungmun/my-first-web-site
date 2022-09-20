@@ -3,36 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>WEB1 - HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
   </head>
-
   <body>
-    <h1><a href="index.html">WEB</a></h1>
-    <ol>
-      <li><a href="htmlstudy.html">HTML-Study</a></li>
-      <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html">JavaScript</a></li>
-    </ol>
+    <h1><a href="index.html">HOME</a></h1>
 
-    <h2>HTML 이란?</h2>
-    <p> <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="html5 speicification">HyperText Markup Language (HTML)</a> is a type of markup language.[1] It is used <strong>to make <u>webpages</u>.</strong> Webpages can include writing, links, pictures, and even sound and video. HTML tells web browsers what webpages should look like. HTML also adds meta information to webpages. Meta information is information about about a webpage e.g., the name of the person who created the page. Web browsers usually do not show meta information.</p>
-    <p style="margin-top:30px">
-    HTML is often used with Cascading Style Sheets (CSS) and JavaScript. CSS is used to change the way HTML looks. JavaScript tells websites how to behave. It can also change HTML and CSS.</p>
-    <img src="coding.jpg" width="100%">
-    <p>HTML is made by the World Wide Web Consortium (W3C). There are many versions of HTML. As of September 2018, the current standard of HTML is called HTML 5 and is specifically at version 5.2.</p>
-    <h3 style="background-color:skyblue;"> &lt;html&gt 태그에 관하여...</h3>
-    <ul>
-      <li> li태그 : list의 약자로 즉, 목록을 만들 때 사용하며, ul 태그와 함께 사용된다.</li>
-      <li> 태그이름 : 부등호 &lt 는 html 파일에 직접 사용불가. 따락서 &lt; 기호를, <strong>&amp;lt;</strong> 이렇게 표기하면 태그와 혼동되지 않고 부등호가 잘 표현됩니다.</li>
-      <li> &lt;h1&gt;태그 : 제목 태그로 한 페이지에 한 번만 사용한다.</li>
-      <li> &lt;h1&gt태그 색상 :  &lt;h3 style="background-color:orange;">미래인류의 시간 여행행 &lt/h3&gt</li>
-      <li>&amp;amp :
+    <div id="grid">
+          <ol type="I">
+            <li><a href="htmlstudy.html">HTML</a></li>
+            <li><a href="cssstudy.html">CSS</a></li>
+            <li><a href="jsstudy.html">JavaScript</a></li>
+            <input type="button" value="night" onclick="
+               nightDayHandler(this);
+                ">
+
+          </ol>
+      <div id="article">
+        <h2>HTML</h2>
+        <p> <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="html5 speicification">HyperText Markup Language (HTML)</a> is a type of markup language.[1] It is used <strong>to make <u>webpages</u>.</strong> Webpages can include writing, links, pictures, and even sound and video. HTML tells web browsers what webpages should look like. HTML also adds meta information to webpages. Meta information is information about about a webpage e.g., the name of the person who created the page. Web browsers usually do not show meta information.</p>
+      </div>
+    </div>
+
+<div class="gita">
+<!--  html  태그에 관하여  -->
+  <h2 style="background-color:skyblue;"> &lt;html&gt 태그에 관하여...</h2>
+  <ul>
+    <li> &lt;a&gt;태그 : list의 약자로 즉, 목록을 만들 때 사용하며, ul 태그와 함께 사용된다.</li>
+    <P><A class=con_link title="마우스를 올리면 | 부연 설명이 나와요" href="http://blog.naver.com/kudolove" target=_blank>마우스를 올려보세요</A> <br />
+<br />&lt;a href="<A class=con_link href="http://blog.naver.com/kudolove" target=_blank>#</A>" title="마우스를 올리면 | 부연 설명이 나와요"&gt;마우스를 올려보세요&lt;/a&gt;<br />
+<br />이같이 링크에 마우스를 올리면 부연 설명이 나와요. </P>
+    <li> &lt;li&gt;태그 : list의 약자로 즉, 목록을 만들 때 사용하며, ul 태그와 함께 사용된다.</li>
+    <li> 태그이름 : 부등호 &lt 는 html 파일에 직접 사용불가. 따락서 &lt; 기호를, <strong>&amp;lt;</strong> 이렇게 표기하면 태그와 혼동되지 않고 부등호가 잘 표현됩니다.</li>
+    <li> &lt;h1&gt;태그 : 제목 태그로 한 페이지에 한 번만 사용한다.</li>
+    <li> &lt;h1&gt태그 색상 :  &lt;h3 style="background-color:orange;">미래인류의 시간 여행 &lt/h3&gt</li>
+    <li>&amp;amp :
 앰퍼샌드(&amp;) 기호는, 위의 경우들에서 보는 것과 같이 이미 특수한 용도로 사용되고 있습니다. 그래서 &amp; 기호 자체를 표현해 주기 위해서는 &amp; 를, <strong>&amp;amp;</strong> 이렇게 표기해 주어야 합니다.</li>
-      <li> > 태그 : &amp;gt</li>
-    </ul>
+    <li> > 태그 : &amp;gt;</li>
+    <li><a href="http://jun.hansung.ac.kr/WP_2014/WP/lecture%20notes/html5%20canvas.html">canvas 태그</a></li>
+    <p>canvas 태그는 픽셀 단위로 컨프롤 할 수 있어서 html 이 할 수 없는 작업을 가능하게 한다. 예를 들어 비디오도 조각으로 나누어 조작 가능함. 비트맵 이다. svg 는 벡터.</p>
+    <li><a href="https://www.youtube.com/watch?v=JFQOgt5DMBY">HTML5 Canvas 캔버스 라이브 강좌 #1_1분코딩</a></li>
+  </ul>
 
+  <p>* 먼저 글씨에 영향을 주는 HTML 태그에 대해서 알아보자.</p>
 
-    <p>먼저 글씨에 영향을 주는 HTML 태그에 대해서 알아보자.</p>
-<p>&nbsp;</p>
 <table class="txc-table" style="font-size: 13px; font-family: '맑은 고딕', sans-serif; width: 445px; border-collapse: collapse;" border="0" width="445" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
@@ -224,6 +239,43 @@
 <p style="margin-left: 2em;"><span style="color: #ff0000;"><span style="color: #ff0000;"><span>[</span><b>&lt;H5&gt;</b></span><span style="color: #000000;">HONG_H5</span><span style="color: #ff0000;"><b>&lt;/H5&gt;</b><span>]</span></span></span></p>
 <p style="margin-left: 2em;"><span style="color: #ff0000;"><span style="color: #ff0000;"><span style="color: #ff0000;"><span>[</span><b>&lt;H6&gt;</b></span><span style="color: #333333;">HONG_H6</span><span style="color: #ff0000;"><b>&lt;/H6&gt;</b><span>]</span></span></span></span></p>
 <p>&nbsp;</p>
+
+</div>
+
+<!-- html 관련 용어 -->
+<div class="gita">
+  <h2 style="background-color:skyblue;">html 관련 용어</h2>
+  <ul>
+    <li>MDN 웹 문서(영어: MDN Web Docs, 이전 이름 모질라 개발자 네트워크(영어: Mozilla Developer Network), 모질라 개발자 센터(영어: Mozilla Developer Center))는 웹 표준과 모질라 프로젝트에 대한 개발 문서들이 담긴 모질라의 공식 웹사이트이다</li>
+    <li>DOM 이란? 문서 객체 모델(DOM, Document Object Model)은 XML이나 HTML 문서에 접근하기 위한 일종의 인터페이스입니다. 이 객체 모델은 문서 내의 모든 요소를 정의하고, 각각의 요소에 접근하는 방법을 제공합니다.</li>
+  </ul>
+</div>
+
+<!-- html 관련 사이트 -->
+<div class="gita">
+  <h2 style="background-color:skyblue;">html 관련 사이트</h2>
+  <ul>
+    <li><a href="https://www.w3schools.com/html/default.asp" title="W3Schools is a freemium educational website for learning coding online">W3 school</a></li>
+    <li><a href="https://developer.mozilla.org/ko/docs/Games">mozila 웹 게임 개발</a></li>
+    <li><a href="https://bruno-simon.com/">웹 게임 : three.js 이용</a></li>
+    <li><a href="https://bruno-simon.com/">웹 게임(헤라클래스) : three.js 이용</a></li>
+    <li><a href="https://blog.wishket.com/api%EB%9E%80-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85-%EA%B7%B8%EB%A6%B0%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8/" title="API는 Application Programming Interface(애플리케이션 프로그램 인터페이스)의 줄임말/API는 정의 및 프로토콜 집합을 사용하여 두 소프트웨어 구성 요소가 서로 통신할 수 있게 하는 메커니즘입니다. 예를 들어, 기상청의 소프트웨어 시스템에는 일일 기상 데이터가 들어 있습니다. 휴대폰의 날씨 앱은 API를 통해 이 시스템과 "대화"하고 휴대폰에 매일 최신 날씨 정보를 표시합니다.">API란? 비개발자가 알기 쉽게 설명해드립니다!</a></li>
+    <li><a href="https://m.blog.naver.com/magnking/220972680805">[JavaScript] DOM이란 무엇인가?</a></li>
+  </ul>
+</div>
+
+
+<input type="button" value="night" onclick="
+  if(this.value === 'night'){
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      this.value = 'day'
+  }else{
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      this.value = 'night'
+    }
+    ">
 
 </body>
 
